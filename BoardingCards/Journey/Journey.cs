@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Text;
+using BoardingCards.Exceptions;
 
 namespace BoardingCards.Journey;
 
@@ -16,8 +17,12 @@ public class Journey : IEnumerable<JourneyStep>
     public Journey(IEnumerable<JourneyStep> steps)
     {
         _steps = steps.ToList();
-        JourneyBeginning = _steps.First(x => x.Previous is null);
-        JourneyEnd = _steps.First(x => x.Next is null);
+        
+        var beginning = _steps.FirstOrDefault(x => x.Previous is null);
+        JourneyBeginning = beginning ?? throw new NoJourneyBeginningException();
+        
+        var end = _steps.First(x => x.Next is null);
+        JourneyEnd = end ?? throw new NoJourneyEndException();
     }
 
     public IEnumerator<JourneyStep> GetEnumerator()
