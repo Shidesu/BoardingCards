@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardingCards", "BoardingCards\BoardingCards.csproj", "{5EA05569-F4DA-4F2B-8C89-0097CB080FB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardingCards.Tests", "BoardingCards.Tests\BoardingCards.Tests.csproj", "{C2F949B7-262D-4BD2-91E8-A4E4A004ABD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EA05569-F4DA-4F2B-8C89-0097CB080FB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA05569-F4DA-4F2B-8C89-0097CB080FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA05569-F4DA-4F2B-8C89-0097CB080FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA05569-F4DA-4F2B-8C89-0097CB080FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F949B7-262D-4BD2-91E8-A4E4A004ABD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F949B7-262D-4BD2-91E8-A4E4A004ABD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F949B7-262D-4BD2-91E8-A4E4A004ABD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F949B7-262D-4BD2-91E8-A4E4A004ABD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
